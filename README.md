@@ -11,5 +11,5 @@ This project connects to [GraphQL Lighthouse Laravel](https://github.com/noud/sc
 ## How to start
 
 ```
-git clone https://github.com/noud/react-appolo-blog.git && yarn && yarn start
+git clone https://github.com/noud/react-apollo-blog.git && yarn && yarn start
 ```
