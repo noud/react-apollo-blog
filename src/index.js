@@ -38,10 +38,10 @@ const pusherLink = new PusherLink({
   })
 });
 
+//const link = new HttpLink({ uri: GRAPHCMS_API });
 const link = ApolloLink.from([pusherLink, new HttpLink({ uri: GRAPHCMS_API })]);
 
 const client = new ApolloClient({
-//  link: new HttpLink({ uri: GRAPHCMS_API }),
   link: link,
   cache: new InMemoryCache()
 })
