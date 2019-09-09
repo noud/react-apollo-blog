@@ -1,14 +1,16 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { graphql } from 'react-apollo'
+// eslint-disable-next-line
+import { graphql, Subscription } from 'react-apollo'
 import gql from 'graphql-tag'
+//import { useSubscription } from "use-subscription";
 
 const POSTS_PER_PAGE = 4
 
 // const Home = ({ data: { loading, error, posts, postsConnection, networkStatus }, loadMorePosts }) => {
 const Home = ({ data: { loading, error, posts, networkStatus }, loadMorePosts }) => {
   if (error) return <h1>Error fetching posts!</h1>
-//  if (posts && postsConnection) {
+  //  if (posts && postsConnection) {
   if (posts) {
     // const areMorePosts = posts.length < postsConnection.aggregate.count
     const areMorePosts = posts.length < posts.paginatorInfo.count
