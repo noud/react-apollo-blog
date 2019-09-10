@@ -24,6 +24,7 @@ import registerServiceWorker from './registerServiceWorker'
 // Replace this with your project's endpoint
 ///const GRAPHCMS_API = 'https://api-useast.graphcms.com/v1/cjiacyow100ob01eqwnghonw2/master'
 const GRAPHCMS_API = 'http://127.0.0.1:8000/graphql'
+// eslint-disable-next-line
 const AUTH_URI = 'ws://127.0.0.1/graphql/subscriptions/auth'
 
 const PUSHER_API_KEY = '0fd0c3a8fcbd50e95a48'
