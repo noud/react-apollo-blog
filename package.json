@@ -1,11 +1,12 @@
 {
   "name": "create-react-app-apollo-blog",
   "version": "1.0.0",
-  "description": "GraphCMS Blog starter using Apollo Client and create-react-app",
+  "description": "Blog starter using Apollo Client and create-react-app",
   "repository": "https://github.com/hmeissner/graphcms-templates",
   "author": "Hugo Meissner <hugomeissner@icloud.com>",
   "license": "MIT",
   "dependencies": {
+    "@types/react": "^16.9.2",
     "apollo-cache-inmemory": "^1.6.3",
     "apollo-client": "^2.6.4",
     "apollo-link": "^1.2.13",
@@ -19,7 +20,7 @@
     "react-dom": "^16.8.6",
     "react-markdown": "^3.1.0",
     "react-router-dom": "^4.3.1",
-    "react-scripts": "^3.0.1",
+    "react-scripts": "^3.1.1",
     "subscriptions-transport-ws": "^0.9.16",
     "use-subscription": "^1.0.0"
   },
@@ -31,8 +32,8 @@
     "lint": "standard --fix"
   },
   "devDependencies": {
-    "babel-eslint": "^10.0.2",
-    "standard": "^10.0.2"
+    "babel-eslint": "^10.0.3",
+    "standard": "^14.1.0"
   },
   "standard": {
     "parser": "babel-eslint"
