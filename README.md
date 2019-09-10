@@ -6,7 +6,7 @@ For an overview of how things work in `React` please refer to the [React docs](h
 
 ## Server
 
-This project connects to [GraphQL Lighthouse Laravel](https://github.com/noud/schema)
+This project connects to [Lighthouse Tutorial](https://github.com/noud/lighthouse-tutorial)
 
 ## How to start
 

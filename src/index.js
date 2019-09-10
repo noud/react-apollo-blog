@@ -18,7 +18,7 @@ import registerServiceWorker from './registerServiceWorker'
 
 // Replace this with your project's endpoint
 ///const GRAPHCMS_API = 'https://api-useast.graphcms.com/v1/cjiacyow100ob01eqwnghonw2/master'
-const GRAPHCMS_API = 'http://schema.localhost/graphql'
+const GRAPHCMS_API = 'http://127.0.0.1:8000/graphql'
 
 const PUSHER_API_KEY = '01bbbd7da92fc31419e7'
 const PUSHER_CLUSTER = 'eu'
