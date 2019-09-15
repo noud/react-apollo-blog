@@ -7,7 +7,7 @@ import { getMainDefinition } from 'apollo-utilities';
 
 // eslint-disable-next-line
 import { ApolloLink } from 'apollo-link'
-import Pusher from 'pusher'
+import Pusher from 'pusher-js'
 import PusherLink from './PusherLink'
 
 // Replace this with your project's endpoint
