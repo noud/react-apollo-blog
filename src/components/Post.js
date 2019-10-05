@@ -3,20 +3,20 @@ import gql from 'graphql-tag'
 import { graphql } from 'react-apollo'
 import Markdown from 'react-markdown'
 
-const Post = ({ data: { loading, error, post } }) => {
+const Post = ({ data: { loading, error, single_post } }) => {
   if (error) return <h1>Error fetching the post!</h1>
   if (!loading) {
     return (
       <article>
-        <h1>{post.title}</h1>
+        <h1>{single_post.title}</h1>
         <div className='Post-placeholder'>
           <img
-            alt={post.title}
-            src={post.coverImage && `https://media.graphcms.com/resize=w:650,h:366,fit:crop/${post.coverImage.handle}`}
+            alt={single_post.title}
+            src={single_post.coverImage && `https://media.graphcms.com/resize=w:650,h:366,fit:crop/${single_post.coverImage.handle}`}
           />
         </div>
         <Markdown
-          source={post.content}
+          source={single_post.content}
           escapeHtml={false}
         />
       </article>
@@ -27,7 +27,7 @@ const Post = ({ data: { loading, error, post } }) => {
 
 export const singlePost = gql`
   query singlePost($id: ID!) {
-    post(id: {id: $id}) {
+    single_post(id: {id: $id}) {
       id
       slug
       title
